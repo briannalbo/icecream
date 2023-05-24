@@ -24,6 +24,15 @@ header {
   color: white;
 }
 
+a {
+  margin: 1.5vw;
+}
+
+a:hover {
+  color: black; 
+  
+}
+
 .App-link {
   color: #61dafb;
 }

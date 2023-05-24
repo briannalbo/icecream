@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import Header from './components/Header';
+import Nav from './components/Nav';
 
 function App() {
 
@@ -18,9 +19,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
-      {/* <header className="App-header">
-        <h1> Happy Head Ice Cream</h1></header> */}
+      <Header>
+      <Nav
+            pages={pages}
+            setCurrentPage={setCurrentPage}
+            currentPage={currentPage}
+          ></Nav>
+      </Header>
+      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
