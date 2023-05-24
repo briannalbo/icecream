@@ -5,13 +5,13 @@ import React from 'react';
 
 
 //function to render the about me page content
-function About() {
+function Contact() {
     return (
-        <p>test ABOUT</p>
+        <p>test CONTACT</p>
      
 
     
     );
 };
 //exports about  function
-export default About;
+export default Contact;

@@ -1,15 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Page from './components/Pages';
+
 
 function App() {
 
 
   const [pages] = useState([
     {
-      name: "About Me"
+      name: "About"
     },
     { name: "Products" },
     { name: "Contact" }
@@ -27,18 +28,10 @@ function App() {
           ></Nav>
       </Header>
       
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Happy Head Ice Cream
-        </a>
+        
+      <main>
+          <Page currentPage={currentPage}></Page>
+        </main>
       
     </div>
   );
