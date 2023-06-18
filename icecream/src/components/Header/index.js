@@ -8,7 +8,7 @@ function Header(props) {
     return (
         <header>
             <div>
-            <h1>Happy Head Ice Cream</h1>
+            <h1>Brooklyn Confections & Creamery</h1>
             </div>
             {/* renders the nav section */}
             {props.children}
